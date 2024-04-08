@@ -5,8 +5,8 @@ import React from 'react'
 const Header = () => {
     return (
         <>
-            <section className='container text-white bg-[#222529] fixed top-0 left-0 right-0 '>
-                <div className="navbar bg-zinc-800 opacity-65 z-40 rounded-[7px]">
+            <section className='container text-white fixed top-0 left-0 right-0 mt-5  '>
+                <div className="navbar bg-[#222529]  opacity-65 z-40 rounded-[7px]">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

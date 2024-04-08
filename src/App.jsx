@@ -8,8 +8,8 @@ function App() {
     <>
       <Layout>
         <Hero />
-        <section className="bg-[#353A40] pt-12 ">
-          <div className="grid grid-rows-2 grid-flow-col container p-4 h-[200px]">
+        <section className="bg-[#353A40] pt-12 pb-12">
+          <div className="grid grid-rows-2 grid-flow-col container p-4 mt-14">
             <div className="row-start-1">
               <h4 className="text-6xl text-white ">
                 Managing Your Luxurious Experience
@@ -26,13 +26,15 @@ function App() {
               </button>
             </div>
           </div>
-          <div className=" container flex justify-center items-center">
-            <div className="card w-96 bg-base-100 shadow-xl image-full">
+        </section>
+        <section className="container h-min-screen relative top-[-150px] pb-12" >
+        <div className="  flex justify-center items-center w-full h-full pt-8">
+            <div className="card w-96 bg-base-100 shadow-xl image-full mx-7">
               <figure><img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-start">
                   <button className="btn btn-primary">Buy Now</button>
                 </div>
               </div>
@@ -42,7 +44,7 @@ function App() {
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-start">
                   <button className="btn btn-primary">Buy Now</button>
                 </div>
               </div>
