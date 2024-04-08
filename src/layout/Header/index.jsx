@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
+import Hero from '../../components/Hero'
 
 const Header = () => {
     return (
         <>
-            <div className=''>Header</div>
-            <Navbar/>
+            <Hero />
+            <Navbar />
         </>
     )
 }

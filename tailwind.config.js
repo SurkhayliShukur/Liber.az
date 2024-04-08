@@ -8,13 +8,20 @@ export default {
     container: {
       center: true,
       screens: {
+        '2xl': '1140px',
         lg: '1140px',
         xl: '1140px',
-        '2xl': '1140px'
+        md: "720px",
+        sm: "540px"
+
       },
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    // darkTheme: "light", // name of one of the included themes for dark mode
+  },
 }
 
