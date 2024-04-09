@@ -5,7 +5,7 @@ import React from 'react'
 const Header = () => {
     return (
         <>
-            <section className='container text-white fixed top-0 left-0 right-0 mt-5  '>
+            <section className='container text-white fixed left-0 right-0 pt-5 z-50 '>
                 <div className="navbar bg-[#222529]  opacity-65 z-40 rounded-[7px]">
                     <div className="navbar-start">
                         <div className="dropdown">

@@ -1,5 +1,5 @@
 import Layout from "./layout"
-import Hero from "./components/Hero"
+
 
 function App() {
 
@@ -7,18 +7,17 @@ function App() {
   return (
     <>
       <Layout>
-        <Hero />
-        <section className="bg-[#353A40] pt-12 pb-12">
-          <div className="grid grid-rows-2 grid-flow-col container p-4 mt-14">
-            <div className="row-start-1">
-              <h4 className="text-6xl text-white ">
+        <section className="bg-[#353A40] pt-12 pb-28 h-[400px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 container p-4 mt-14 gap-4">
+            <div className="sm:col-span-1">
+              <h4 className="text-4xl text-white">
                 Managing Your Luxurious Experience
               </h4>
               <p className="text-xl text-white">
                 Let us arrange transportation for every part of your journey.
               </p>
             </div>
-            <div className="row-start-1 row-end-4">
+            <div className="sm:col-span-1 flex items-center justify-center">
               <button className="btn">
                 <span>
                   +1 (855) 885-5559
@@ -27,9 +26,9 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="container h-min-screen relative top-[-150px] pb-12" >
-        <div className="  flex justify-center items-center w-full h-full pt-8">
-            <div className="card w-96 bg-base-100 shadow-xl image-full mx-7">
+        <section className="container h-min-screen  pt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 pb-12">
+          <div className="flex justify-center items-center w-full h-full">
+            <div className="card bg-base-100 shadow-xl image-full">
               <figure><img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
@@ -39,7 +38,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl image-full">
+          </div>
+          <div className="flex justify-center items-center w-full h-full">
+            <div className="card bg-base-100 shadow-xl image-full">
               <figure><img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
@@ -51,6 +52,20 @@ function App() {
             </div>
           </div>
         </section>
+
+
+        <section className="section_car">
+          <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center">
+            <div className="p-14">
+              <img src="https://plus.unsplash.com/premium_photo-1681489433354-f7fabdebd933?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full lg:w-[300px] h-[300px] object-cover" />
+            </div>
+            <div className="flex items-center">
+              <h4 className="text-xl text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quos?</h4>
+            </div>
+          </div>
+        </section>
+
+
       </Layout>
     </>
   )
