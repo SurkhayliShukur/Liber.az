@@ -9,7 +9,7 @@ const Hero = () => {
             <section className='relative h-full'>
                 <div className="grid place-items-center">
                     <img src={slidePhoto} alt="" className='w-full h-auto' />
-                    <div className='absolute bg-zinc-600 bg-opacity-50 text-white text-xl p-4'>
+                    <div data-aos="fade-down" className='absolute bg-zinc-600 bg-opacity-50 text-white text-xl p-4'>
                         <span>
                             From Skyline to Shoreline
                         </span>

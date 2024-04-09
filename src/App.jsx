@@ -60,11 +60,15 @@ function App() {
               <img src="https://plus.unsplash.com/premium_photo-1681489433354-f7fabdebd933?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full lg:w-[300px] h-[300px] object-cover" />
             </div>
             <div className="flex items-center z-10">
-              <h4 className="text-xl text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quos?</h4>
+              <h4 className="text-2xl text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quos?</h4>
             </div>
           </div>
-          <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </section>
+        <section>
+
+        </section>
+
 
 
 

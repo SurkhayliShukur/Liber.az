@@ -1,12 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 
 
 
 const Header = () => {
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        function handleScroll() {
+            if (window.scrollY > 0) {
+                setScroll(true);
+            } else {
+                setScroll(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
-            <section className='container text-white fixed left-0 right-0 pt-5 z-50 '>
-                <div className="navbar bg-[#222529]  opacity-65 z-40 rounded-[7px]">
+            <section className="container  fixed left-0 right-0 pt-5 z-50  transition-colors duration-300">
+                <div className={`navbar   opacity-65 z-40 rounded-[7px] ${scroll ? 'bg-white' : 'bg-[#222529]'}`}  style={{ color: scroll ? 'black' : 'white' }}>
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,7 +61,7 @@ const Header = () => {
                     </div>
 
                     <div className="navbar-end">
-                        <a className="btn">Button</a>
+                        <a className="btn border-none text-white bg-[#1274e7] hover:text-black">Contact Sales</a>
                     </div>
                 </div>
             </section>
