@@ -1,5 +1,6 @@
 import Layout from "./layout"
-import SwiperCorusel from "./components/Swiper"
+import carImage from "./assets/img/swiper1.jpg"
+
 
 
 function App() {
@@ -54,38 +55,33 @@ function App() {
         </section>
 
 
-        <section className="section_car relative h-min-screen">
-          <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center">
-            <div className="  relative p-8  z-10">
+        <section className="section_car  h-auto">
+          <div className="container grid grid-cols-1 lg:grid-cols-2  gap-4 place-items-center">
+            <div className="sm:col-span-1  p-8  z-10">
               <img src="https://plus.unsplash.com/premium_photo-1681489433354-f7fabdebd933?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full lg:w-[500px] h-[400px] object-cover" />
             </div>
-            <div className=" z-10">
+            <div className="sm:col-span-1 z-10">
               <h4 className="text-3xl text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quos?</h4>
             </div>
           </div>
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </section>
-        <section className="min-h-screen pt-32">
-          <div className="container grid sm:grid-cols-1 lg:grid-cols-2 gap-28">
-            <div className="sm:col-span-1">
-              <h2 className="text-4xl font-bold mt-14 ">
-                ONE Concierge For All Your Transportation Needs.
-              </h2>
-              <p className="text-xl mt-3">
-                Book your luxury travel experience and let us bring your wishes to life.
-              </p>
-            </div>
-            <div className="sm:col-span-1">
-              <SwiperCorusel />
-            </div>
 
-
-          </div>
+        <section className="h-auto pt-18 pb-24">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-8 lg:gap-28 place-items-center">
+                <div className="sm:col-span-1">
+                    <h2 className="text-4xl font-bold mt-14">
+                        ONE Concierge For All Your Transportation Needs.
+                    </h2>
+                    <p className="text-xl mt-3">
+                        Book your luxury travel experience and let us bring your wishes to life.
+                    </p>
+                </div>
+                <div className="sm:col-span-1 pt-18">
+                  <img src={carImage} alt="Image" className="w-[400px] h-[400px]"/>
+                </div>
+            </div>
         </section>
-
-
-
-
       </Layout>
     </>
   )
