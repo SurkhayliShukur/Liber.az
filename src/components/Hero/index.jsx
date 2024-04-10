@@ -15,7 +15,7 @@ const Hero = () => {
                             From Skyline to Shoreline
                         </span>
                     </p>
-                    <h1 data-aos="fade-up" className='text-4xl md:text-6xl lg:text-8xl font-bold text-white mt-4 md:mt-8'>
+                    <h1 data-aos="fade-up" className='text-2xl md:text-6xl lg:text-8xl font-bold text-white mt-4 md:mt-8'>
                         Luxury Transportation Concierge
                     </h1>
                 </div>
