@@ -77,7 +77,7 @@ function App() {
                         Book your luxury travel experience and let us bring your wishes to life.
                     </p>
                 </div>
-                <div className="sm:col-span-1 pt-18">
+                <div className="sm:col-span-1 p-8">
                   <img src={carImage} alt="Image" className="w-[400px] h-[400px]"/>
                 </div>
             </div>
