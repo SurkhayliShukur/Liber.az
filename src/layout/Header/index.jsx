@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-
-
-
 const Header = () => {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
@@ -23,7 +20,7 @@ const Header = () => {
 
     return (
         <>
-            <section className="container  fixed left-0 right-0 pt-5 z-50  transition-colors duration-300 shadow-2xl z-40">
+            <header className="container  fixed left-0 right-0 pt-5 z-50  transition-colors duration-300 shadow-2xl z-40">
                 <div className={`navbar   opacity-65 z-40 rounded-[7px] ${scroll ? 'bg-white' : 'bg-[#222529]'}`}  style={{ color: scroll ? 'black' : 'white' }}>
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -64,7 +61,7 @@ const Header = () => {
                         <a className="btn border-none text-white bg-[#1274e7] hover:text-black">Contact Sales</a>
                     </div>
                 </div>
-            </section>
+            </header>
         </>
     )
 }
