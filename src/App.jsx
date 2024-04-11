@@ -40,7 +40,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-down"   className="flex justify-center items-center w-full h-full">
+          <div data-aos="fade-down" className="flex justify-center items-center w-full h-full">
             <div className="card bg-base-100 shadow-2xl image-full">
               <figure><img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes" /></figure>
               <div className="card-body">
@@ -55,13 +55,13 @@ function App() {
         </section>
 
 
-        <section className="section_car  h-auto">
-          <div className="container grid grid-cols-1 lg:grid-cols-2  gap-4 place-items-center">
-            <div data-aos="fade-down" className="sm:col-span-1  p-8  z-10">
+        <section className="section_car min-h-screen pb-24 pt-24 ">
+          <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center">
+            <div data-aos="fade-down" className="sm:col-span-1 p-8 z-10">
               <img src="https://plus.unsplash.com/premium_photo-1681489433354-f7fabdebd933?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full lg:w-[500px] h-[400px] object-cover" />
             </div>
             <div data-aos="fade-down" className="sm:col-span-1 z-10">
-              <h4 className="text-3xl text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quos?</h4>
+              <h4 className="text-2xl lg:text-3xl text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quos?</h4>
             </div>
           </div>
           <div className="absolute inset-0 bg-black opacity-50"></div>
